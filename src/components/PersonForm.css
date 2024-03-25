@@ -1,0 +1,31 @@
+/* PersonForm.css */
+.person-form {
+  display: flex;
+  justify-content: center;
+}
+.person-form-container {
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-item {
+  margin-bottom: 15px;
+}
+.form-group {
+  display: flex;
+  gap: 20px;
+  width: 900px;
+}
+.form_group_button {
+  display: flex;
+  gap: 100px;
+}
+
+.button_group {
+  display: flex;
+  gap: 50px;
+}

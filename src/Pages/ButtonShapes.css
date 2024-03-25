@@ -1,0 +1,185 @@
+.button-layout {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+.button_head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.span-button {
+  position: relative;
+  color: #6eda78;
+}
+
+.button-label {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.shape-button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.card_container_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal_buttons {
+  display: flex;
+}
+.card_item {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.card_item:hover {
+  background-color: orange !important;
+}
+.card_item:active {
+  background-color: #6eda78 !important;
+}
+
+.card_item_center {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.card_item_center:hover {
+  background-color: #ffa200 !important;
+}
+.card_item_center:active {
+  background-color: #6eda78 !important;
+}
+
+.shape-button-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: #6eda78;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.button_position {
+  display: flex;
+}
+
+.triangle-right {
+  background-color: gray;
+  height: 100px;
+  width: 120px;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.triangle-up {
+  background-color: gray;
+  height: 100px;
+  width: 120px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.triangle-left {
+  background-color: gray;
+  height: 100px;
+  width: 120px;
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+}
+
+.triangle-down {
+  background-color: gray;
+  height: 100px;
+  width: 120px;
+  clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
+}
+
+.group_button_container {
+  column-gap: 30px;
+}
+
+.group_button_top {
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+
+.circle-shape {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.rectangle-shape {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+}
+
+.oval-shape {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  border-radius: 80px 80px;
+  transform: scaleX(2);
+}
+.group_button_bottom {
+  display: flex;
+  justify-content: center;
+  padding-right: 200px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+
+.fabric-button {
+  background-color: gray;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.rhombus-shape {
+  width: 180px;
+  height: 100px;
+  background-color: gray;
+  transform: perspective(10px) rotateX(1deg);
+}
+
+.rhombus_shape_tilted {
+  background-color: gray;
+  height: 100px;
+  width: 160px;
+  transform: rotate(150deg) skewY(30deg);
+}

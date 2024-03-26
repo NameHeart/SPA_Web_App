@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deletePerson } from '../redux/personSlice';
-import { Table, Button, Checkbox, Alert, Modal } from 'antd';
+import { Table, Button, Checkbox, Modal } from 'antd';
 import { Person } from '../redux/person';
 import { useTranslation } from 'react-i18next';
 
@@ -9,12 +9,10 @@ const PersonTable: React.FC = () => {
   const dispatch = useDispatch();
   const people = useSelector((state: any) => state.person);
   const [selectedRowKeys, setSelectedRowKeys] = useState<string[]>([]);
-  const [showAlert, setShowAlert] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
   const { t } = useTranslation();
 
   const handleDelete = () => {
-    // ตรวจสอบว่ามีข้อมูลที่ถูกเลือกอยู่หรือไม่
     if (selectedRowKeys.length === 0) {
       setShowModal(true);
       return;
@@ -53,7 +51,18 @@ const PersonTable: React.FC = () => {
         <span>{`${record.firstName} ${record.lastName}`}</span>
       ),
     },
-    { title: t('gender'), dataIndex: 'gender', key: 'gender' },
+    {
+      title: t('gender'),
+      dataIndex: 'gender',
+      key: 'gender',
+      render: (text: string) => (
+        <span>
+          {text === 'male' && t('male')}
+          {text === 'female' && t('female')}
+          {text === 'unspecified' && t('unspecified')}
+        </span>
+      ),
+    },
     { title: t('phone_number'), dataIndex: 'phoneNumber', key: 'phoneNumber' },
     {
       title: t('nationality'),

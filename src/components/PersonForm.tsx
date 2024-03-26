@@ -162,9 +162,9 @@ const PersonForm: React.FC<PersonFormProps> = ({ person, onSave }) => {
                 rules={[{ required: true, message: t('gender_required') }]}
               >
                 <Radio.Group>
-                  <Radio value='ชาย'>{t('male')}</Radio>
-                  <Radio value='หญิง'>{t('female')}</Radio>
-                  <Radio value='ไม่ระบุ'>{t('unspecified')}</Radio>
+                  <Radio value='male'>{t('male')}</Radio>
+                  <Radio value='female'>{t('female')}</Radio>
+                  <Radio value='unspecified'>{t('unspecified')}</Radio>
                 </Radio.Group>
               </Form.Item>
             </div>
